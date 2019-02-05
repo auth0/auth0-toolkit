@@ -1,0 +1,11 @@
+{
+  "source": {
+    "includePattern": ".+\\.(j|t)s(doc|x)?$",
+    "excludePattern": "(.+\\.(test|spec).ts)|__tests__|__mocks__"
+  },
+  "plugins": ["plugins/markdown", "jsdoc-babel"],
+  "babel": {
+    "extensions": ["ts", "tsx"],
+    "ignore": ["**/*.(test|spec).ts"]
+  }
+}
